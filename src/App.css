@@ -1,0 +1,339 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark-mode .app-header {
+  background-color: #1e1e1e;
+  color: #64ffda;
+}
+
+.dark-mode .input-conversion-area,
+.dark-mode .stealth-dictionary-area {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.dark-mode textarea,
+.dark-mode input[type="text"] {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.dark-mode button {
+  background-color: #64ffda;
+  color: #121212;
+}
+
+.dark-mode .app-footer {
+  background-color: #1e1e1e;
+  color: #64ffda;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.light-mode .app-header {
+  background-color: #fff;
+  color: #000;
+}
+
+.light-mode .input-conversion-area,
+.light-mode .stealth-dictionary-area {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.light-mode textarea,
+.light-mode input[type="text"] {
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.light-mode button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.light-mode .app-footer {
+  background-color: #fff;
+  color: #007bff;
+}
+
+/* Header Styles */
+.app-header {
+  background-color: #1e1e1e;
+  color: #64ffda;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-left,
+.header-right {
+  padding: 0 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Input and Conversion Area Styles */
+.input-conversion-area {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.input-area,
+.output-area {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #64ffda;
+  color: #121212;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a692;
+}
+
+/* AI Suggestions Box Styles */
+.ai-suggestions-box {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  background-color: #222;
+  border-radius: 5px;
+}
+
+.ai-suggestions-box h3 {
+  color: #64ffda;
+  margin-top: 0;
+}
+
+.ai-suggestions-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ai-suggestions-box li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #333;
+}
+
+.ai-suggestions-box li:last-child {
+  border-bottom: none;
+}
+
+.ai-suggestions-box button {
+  padding: 5px 10px;
+  background-color: #64ffda;
+  color: #121212;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ai-suggestions-box button:hover {
+  background-color: #45a692;
+}
+
+/* Stealth Mode Toggle Styles */
+.stealth-mode-toggle {
+  margin-bottom: 10px;
+}
+
+.stealth-mode-toggle label {
+  font-weight: bold;
+}
+
+.stealth-mode-toggle input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+/* Stealth Dictionary Area Styles */
+.stealth-dictionary-area {
+  padding: 20px;
+  margin: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.stealth-dictionary-area h2 {
+  margin-top: 0;
+  color: #64ffda;
+}
+
+.custom-word-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-word-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #333;
+}
+
+.custom-word-list li:last-child {
+  border-bottom: none;
+}
+
+.custom-word-list button {
+  padding: 5px 10px;
+  background-color: #64ffda;
+  color: #121212;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.custom-word-list button:hover {
+  background-color: #45a692;
+}
+
+.add-custom-word-form {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.add-custom-word-form h3 {
+  color: #64ffda;
+  margin-top: 0;
+}
+
+.add-custom-word-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+.app-footer {
+  background-color: #1e1e1e;
+  color: #64ffda;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  border-top: 1px solid #333;
+}
+
+.app-footer a {
+  color: #64ffda;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* AI Assist Toggle Styles */
+.ai-assist-toggle {
+  margin-bottom: 10px;
+}
+
+.ai-assist-toggle label {
+  font-weight: bold;
+}
+
+.ai-assist-toggle input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+/* Learning Mode Toggle Styles */
+.learning-mode-toggle {
+  margin-bottom: 10px;
+}
+
+.learning-mode-toggle label {
+  font-weight: bold;
+}
+
+.learning-mode-toggle input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+.learning-mode-toggle p {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+/* Dictionary Notification Styles */
+.dictionary-notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+}
